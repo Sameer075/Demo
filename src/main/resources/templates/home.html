@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymleaf.org">
+ <head>
+   <title>Student Details</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <link rel="stylesheet" href="styles.css" />
+ </head>
+ <body>
+ <form th:action="@{/addStudent}" method="post">
+ <label>Name</label>
+ <input type="text" placeholder="Enter Name here" name="name"></input>
+  <label>Marks</label>
+ <input type="number" placeholder="Enter Marks here" name="marks"></input>
+ <button type="submit">Submit</button>
+ </form>
+ </body>
+
+</html>
